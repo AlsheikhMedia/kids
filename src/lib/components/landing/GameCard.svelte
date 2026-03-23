@@ -1,13 +1,12 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
+	import Icon from '@iconify/svelte';
 	import type { GameInfo } from '$lib/games';
 
 	interface Props {
 		game: GameInfo;
-		icon: Snippet;
 	}
 
-	let { game, icon }: Props = $props();
+	let { game }: Props = $props();
 </script>
 
 <a
@@ -19,7 +18,7 @@
 >
 	<article class="card-inner">
 		<div class="card-icon-big">
-			{@render icon()}
+			<Icon icon={game.icon} width={56} height={56} />
 		</div>
 		<div class="card-text">
 			<h3>{game.title}</h3>
@@ -83,12 +82,6 @@
 		border: 3px solid rgba(255, 255, 255, 0.3);
 		flex-shrink: 0;
 		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-		color: white;
-	}
-
-	.card-icon-big :global(svg) {
-		width: 48px;
-		height: 48px;
 	}
 
 	.card-text h3 {
@@ -147,11 +140,6 @@
 			width: 72px;
 			height: 72px;
 			border-radius: 20px;
-		}
-
-		.card-icon-big :global(svg) {
-			width: 36px;
-			height: 36px;
 		}
 
 		.card-text h3 {

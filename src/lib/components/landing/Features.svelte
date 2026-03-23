@@ -1,13 +1,15 @@
+<script lang="ts">
+	import Icon from '@iconify/svelte';
+</script>
+
 <section class="features-section" aria-label="المميزات">
 	<div class="features-card">
 		<h2 class="features-title">لماذا ركن الأطفال؟</h2>
 
 		<div class="features-grid">
 			<div class="feature-item">
-				<div class="feature-icon" style="background: linear-gradient(135deg, #55efc4, #00b894);">
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-						<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-					</svg>
+				<div class="feature-icon">
+					<Icon icon="openmoji:shield" width={40} height={40} />
 				</div>
 				<div>
 					<h3>آمن ١٠٠٪</h3>
@@ -16,10 +18,8 @@
 			</div>
 
 			<div class="feature-item">
-				<div class="feature-icon" style="background: linear-gradient(135deg, #fdcb6e, #f39c12);">
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-						<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-					</svg>
+				<div class="feature-icon">
+					<Icon icon="openmoji:high-voltage" width={40} height={40} />
 				</div>
 				<div>
 					<h3>ابدأ فوراً</h3>
@@ -28,11 +28,8 @@
 			</div>
 
 			<div class="feature-item">
-				<div class="feature-icon" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-						<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-						<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-					</svg>
+				<div class="feature-icon">
+					<Icon icon="openmoji:open-book" width={40} height={40} />
 				</div>
 				<div>
 					<h3>تعليمي وممتع</h3>
@@ -41,11 +38,8 @@
 			</div>
 
 			<div class="feature-item">
-				<div class="feature-icon" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-						<rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-						<path d="M12 18h.01" />
-					</svg>
+				<div class="feature-icon">
+					<Icon icon="openmoji:tablet-computer" width={40} height={40} />
 				</div>
 				<div>
 					<h3>كل الأجهزة</h3>
@@ -98,13 +92,10 @@
 	.feature-icon {
 		width: 52px;
 		height: 52px;
-		border-radius: 16px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-shrink: 0;
-		color: white;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	}
 
 	.feature-item h3 {

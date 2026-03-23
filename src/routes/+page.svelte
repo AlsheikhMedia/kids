@@ -65,46 +65,7 @@
 
 		<div class="games-grid">
 			{#each GAMES as game (game.id)}
-				<GameCard {game}>
-					{#snippet icon()}
-						{#if game.id === 'paint'}
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M12 19l7-7 3 3-7 7-3-3z" />
-								<path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
-								<path d="M2 2l7.586 7.586" />
-								<circle cx="11" cy="11" r="2" />
-							</svg>
-						{:else if game.id === 'colors'}
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<circle cx="12" cy="12" r="10" />
-								<circle cx="12" cy="12" r="4" />
-								<path d="M12 2v4" /><path d="M12 18v4" />
-								<path d="M2 12h4" /><path d="M18 12h4" />
-							</svg>
-						{:else if game.id === 'numbers'}
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M4 17h6" /><path d="M7 7v10" />
-								<path d="M14 7h2a2 2 0 0 1 0 4h-2" />
-								<path d="M14 13h2a2 2 0 0 1 0 4h-2" />
-							</svg>
-						{:else if game.id === 'alphabet'}
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M3 7V5c0-1.1.9-2 2-2h2" />
-								<path d="M17 3h2c1.1 0 2 .9 2 2v2" />
-								<path d="M21 17v2c0 1.1-.9 2-2 2h-2" />
-								<path d="M7 21H5c-1.1 0-2-.9-2-2v-2" />
-								<text x="12" y="16" text-anchor="middle" font-size="11" font-weight="800" fill="currentColor" stroke="none">أب</text>
-							</svg>
-						{:else if game.id === 'puzzle'}
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-								<rect x="3" y="3" width="8" height="8" rx="2" />
-								<rect x="13" y="3" width="8" height="8" rx="2" />
-								<rect x="3" y="13" width="8" height="8" rx="2" />
-								<rect x="13" y="13" width="8" height="8" rx="2" />
-							</svg>
-						{/if}
-					{/snippet}
-				</GameCard>
+				<GameCard {game} />
 			{/each}
 		</div>
 	</section>
