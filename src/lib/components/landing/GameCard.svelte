@@ -3,9 +3,10 @@
 
 	interface Props {
 		game: GameInfo;
+		aboveFold?: boolean;
 	}
 
-	let { game }: Props = $props();
+	let { game, aboveFold = false }: Props = $props();
 </script>
 
 <a
@@ -17,7 +18,7 @@
 >
 	<article class="card-inner">
 		<div class="card-icon-big">
-			<img src={game.icon} alt={game.title} width="112" height="112" />
+			<img src={game.icon} alt={game.title} width="112" height="112" loading={aboveFold ? 'eager' : 'lazy'} />
 		</div>
 		<div class="card-text">
 			<h3>{game.title}</h3>

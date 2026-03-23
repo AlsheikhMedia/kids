@@ -5,7 +5,7 @@
 		<div class="features-grid">
 			<div class="feature-item">
 				<div class="feature-icon">
-					<img src="/icons/shield.svg" alt="آمن" width="80" height="80" />
+					<img loading="lazy" src="/icons/shield.svg" alt="آمن" width="80" height="80" />
 				</div>
 				<div>
 					<h3>آمن ١٠٠٪</h3>
@@ -15,7 +15,7 @@
 
 			<div class="feature-item">
 				<div class="feature-icon">
-					<img src="/icons/high-voltage.svg" alt="سريع" width="80" height="80" />
+					<img loading="lazy" src="/icons/high-voltage.svg" alt="سريع" width="80" height="80" />
 				</div>
 				<div>
 					<h3>ابدأ فوراً</h3>
@@ -25,7 +25,7 @@
 
 			<div class="feature-item">
 				<div class="feature-icon">
-					<img src="/icons/open-book.svg" alt="تعليمي" width="80" height="80" />
+					<img loading="lazy" src="/icons/open-book.svg" alt="تعليمي" width="80" height="80" />
 				</div>
 				<div>
 					<h3>تعليمي وممتع</h3>
@@ -35,7 +35,7 @@
 
 			<div class="feature-item">
 				<div class="feature-icon">
-					<img src="/icons/tablet-computer.svg" alt="كل الأجهزة" width="80" height="80" />
+					<img loading="lazy" src="/icons/tablet-computer.svg" alt="كل الأجهزة" width="80" height="80" />
 				</div>
 				<div>
 					<h3>كل الأجهزة</h3>
