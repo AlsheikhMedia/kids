@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Icon from '@iconify/svelte';
 	import type { GameInfo } from '$lib/games';
 
 	interface Props {
@@ -18,7 +17,7 @@
 >
 	<article class="card-inner">
 		<div class="card-icon-big">
-			<Icon icon={game.icon} width={56} height={56} />
+			<img src={game.icon} alt={game.title} width="112" height="112" />
 		</div>
 		<div class="card-text">
 			<h3>{game.title}</h3>
@@ -72,8 +71,8 @@
 	}
 
 	.card-icon-big {
-		width: 100px;
-		height: 100px;
+		width: 140px;
+		height: 140px;
 		background: rgba(255, 255, 255, 0.25);
 		border-radius: 28px;
 		display: flex;

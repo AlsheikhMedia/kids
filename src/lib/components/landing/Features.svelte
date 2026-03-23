@@ -1,7 +1,3 @@
-<script lang="ts">
-	import Icon from '@iconify/svelte';
-</script>
-
 <section class="features-section" aria-label="المميزات">
 	<div class="features-card">
 		<h2 class="features-title">لماذا ركن الأطفال؟</h2>
@@ -9,7 +5,7 @@
 		<div class="features-grid">
 			<div class="feature-item">
 				<div class="feature-icon">
-					<Icon icon="openmoji:shield" width={40} height={40} />
+					<img src="/icons/shield.svg" alt="آمن" width="80" height="80" />
 				</div>
 				<div>
 					<h3>آمن ١٠٠٪</h3>
@@ -19,7 +15,7 @@
 
 			<div class="feature-item">
 				<div class="feature-icon">
-					<Icon icon="openmoji:high-voltage" width={40} height={40} />
+					<img src="/icons/high-voltage.svg" alt="سريع" width="80" height="80" />
 				</div>
 				<div>
 					<h3>ابدأ فوراً</h3>
@@ -29,7 +25,7 @@
 
 			<div class="feature-item">
 				<div class="feature-icon">
-					<Icon icon="openmoji:open-book" width={40} height={40} />
+					<img src="/icons/open-book.svg" alt="تعليمي" width="80" height="80" />
 				</div>
 				<div>
 					<h3>تعليمي وممتع</h3>
@@ -39,7 +35,7 @@
 
 			<div class="feature-item">
 				<div class="feature-icon">
-					<Icon icon="openmoji:tablet-computer" width={40} height={40} />
+					<img src="/icons/tablet-computer.svg" alt="كل الأجهزة" width="80" height="80" />
 				</div>
 				<div>
 					<h3>كل الأجهزة</h3>
@@ -90,8 +86,8 @@
 	}
 
 	.feature-icon {
-		width: 52px;
-		height: 52px;
+		width: 80px;
+		height: 80px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
