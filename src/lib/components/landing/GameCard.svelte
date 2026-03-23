@@ -60,13 +60,15 @@
 		min-height: 200px;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-end;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
 	}
 
 	.featured .card-inner {
 		min-height: 220px;
 		flex-direction: row;
-		align-items: center;
+		justify-content: center;
 		gap: 24px;
 	}
 
@@ -126,7 +128,7 @@
 
 		.featured .card-inner {
 			flex-direction: column;
-			align-items: flex-start;
+			align-items: center;
 			min-height: 160px;
 		}
 
