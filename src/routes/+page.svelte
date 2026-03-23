@@ -62,11 +62,11 @@
 	<Hero />
 
 	<section class="games-section" aria-label="الألعاب التعليمية">
-		<h2 class="section-title">اختر لعبة!</h2>
-		<p class="section-subtitle">اضغط على البطاقة لتبدأ اللعب</p>
+		<h2 class="section-title">ابدأ اللعب!</h2>
+		<p class="section-subtitle">اضغط على البطاقة لتبدأ</p>
 
 		<div class="games-grid">
-			{#each GAMES as game, index (game.id)}
+			{#each GAMES.filter(g => !g.comingSoon) as game, index (game.id)}
 				<GameCard {game} aboveFold={index < 3} />
 			{/each}
 		</div>
