@@ -23,5 +23,7 @@
 		height: 100dvh;
 		overflow: hidden;
 		background: var(--color-canvas-bg);
+		-webkit-user-select: none;
+		user-select: none;
 	}
 </style>
